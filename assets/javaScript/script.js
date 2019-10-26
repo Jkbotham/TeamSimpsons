@@ -55,3 +55,14 @@ $(document).ready(function () {
 
 
 });
+$(document).ready(function() {
+    var APIKey = "1";
+    var queryURL = "https://www.thesportsdb.com/api/v1/json/" + APIKey + "/searchteams.php?t=Vikings";
+   
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function(response) {
+        console.log(response);
+    });
+});
