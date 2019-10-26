@@ -48,7 +48,7 @@ console.log(response._embedded.events[0].dates.start.localTime);
  
 
 
-
+    // https://app.ticketmaster.com/discovery/v2/events?apikey=7elxdku9GGG5k8j0Xm8KWdANDgecHMV0&keyword=Vikings&locale=*&subGenreId=KZazBEonSMnZfZ7vFE1&sort=date,asc
 
 
 
