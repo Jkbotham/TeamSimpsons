@@ -23,19 +23,19 @@ $(document).ready(function () {
 
             // Objects we are going to use in the site
             //TM// Ticket Adress -- response. 
-            console.log()
+            // console.log()
             //TM// Stadium Name -- response. 
-            console.log()
-            //TM// Game Date  -- response.  dates.start.localDate 
-            console.log()
-            //TM// Game Time  -- response.  dates.start.localTime 
-            console.log()
+console.log(response._embedded.events[0]._embedded.venues); //Can't get specific name.
+            //TM// Game Date    
+console.log(response._embedded.events[0].dates.start.localDate);
+            //TM// Game Time  
+console.log(response._embedded.events[0].dates.start.localTime);
             //TM// Ticket Pricing Range  -- response.
-            console.log() 
+            // console.log() 
             //TM// Entry Information  -- response. 
-            console.log()
+            // console.log()
             //TM// Parking Information -- response. 
-            console.log()
+            // console.log()
         
     
         },
