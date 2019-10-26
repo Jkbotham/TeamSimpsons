@@ -18,6 +18,25 @@ $(document).ready(function () {
         success: function (response) {
             console.log(response);
             console.log(response._embedded.events[0]);
+            //Team Logos 
+            //Team Records
+
+            // Objects we are going to use in the site
+            //TM// Ticket Adress -- response. 
+            console.log()
+            //TM// Stadium Name -- response. 
+            console.log()
+            //TM// Game Date  -- response.  dates.start.localDate 
+            console.log()
+            //TM// Game Time  -- response.  dates.start.localTime 
+            console.log()
+            //TM// Ticket Pricing Range  -- response.
+            console.log() 
+            //TM// Entry Information  -- response. 
+            console.log()
+            //TM// Parking Information -- response. 
+            console.log()
+        
     
         },
         error: function (xhr, status, err) {
@@ -26,17 +45,7 @@ $(document).ready(function () {
     });
 
 
-    //Team Logos
-        //Team Records
-
-    // Objects we are going to use in the site
-    // Ticket Adress
-    // Stadium Discription
-    
-    //Game Date
-    //Ticket Pricing Range
-    //Entry Information
-    //Parking Information
+ 
 
 
 
