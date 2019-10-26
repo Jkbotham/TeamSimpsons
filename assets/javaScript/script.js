@@ -5,7 +5,7 @@ $(document).ready(function () {
     var teamName = "Minnesota Vikings";
     var teamSearch = encodeURI(teamName);
     var ticketMasterURL = "https://app.ticketmaster.com/discovery/v2/events.json?";
-    var apiKey = "uc6FKMGBBMGcsjNBIjHKvpNkXv2pkFhd";
+    var ticketMasterApiKey = "uc6FKMGBBMGcsjNBIjHKvpNkXv2pkFhd";
     var proxy = "https://chriscastle.com/proxy/index.php?:proxy:";
     var footballID = "&subGenreId=KZazBEonSMnZfZ7vFE1";
     var keywordSearch = "&keyword=";
@@ -16,7 +16,7 @@ $(document).ready(function () {
         url: proxy + ticketMasterURL,
         async: true,
         dataType: "json",
-        data: "apikey=" + apiKey + footballID + sortAsc + keywordSearch + teamSearch,
+        data: "apikey=" + ticketMasterApiKey + footballID + sortAsc + keywordSearch + teamSearch,
         timeout: 2000,
         success: function (response) {
             console.log(response);
