@@ -34,3 +34,16 @@ h2{
     color: white;
 }
 
+.navbar-brand {
+    color: antiquewhite;
+}
+
+#navbarDropdownMenuLink {
+    float: right;
+}
+
+.nflTeams {
+    text-align: right;
+    padding: 10px;
+    float: right:
+}
