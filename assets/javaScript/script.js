@@ -34,7 +34,7 @@ $(document).ready(function () {
             //TM// Game Time  
             console.log(response._embedded.events[0].dates.start.localTime);
             //TM// Ticket Pricing Range  -- response.
-            // console.log() 
+            console.log(response._embedded.events[0].priceRanges);
             //TM// Entry Information  -- response. 
             console.log(response._embedded.events[0]._embedded.venues[0].generalInfo.generalRule);
             //TM// Parking Information -- response. 
