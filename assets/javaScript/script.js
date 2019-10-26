@@ -7,13 +7,16 @@ $(document).ready(function () {
     var ticketMasterURL = "https://app.ticketmaster.com/discovery/v2/events.json?";
     var apiKey = "uc6FKMGBBMGcsjNBIjHKvpNkXv2pkFhd";
     var proxy = "https://chriscastle.com/proxy/index.php?:proxy:";
+    var footballID = "&subGenreId=KZazBEonSMnZfZ7vFE1";
+    var keywordSearch = "&keyword=";
+    var sortAsc = "&sort=date,asc"
 
     $.ajax({
         type: "GET",
         url: proxy + ticketMasterURL,
         async: true,
         dataType: "json",
-        data: "keyword=" + teamSearch + "&apikey=" + apiKey,
+        data: "apikey=" + apiKey + footballID + sortAsc + keywordSearch + teamSearch,
         timeout: 2000,
         success: function (response) {
             console.log(response);
@@ -23,19 +26,19 @@ $(document).ready(function () {
 
             // Objects we are going to use in the site
             //TM// Ticket Adress -- response. 
-            console.log()
-            //TM// Stadium Name -- response. 
-            console.log()
-            //TM// Game Date  -- response.  dates.start.localDate 
-            console.log()
-            //TM// Game Time  -- response.  dates.start.localTime 
-            console.log()
-            //TM// Ticket Pricing Range  -- response.
-            console.log() 
-            //TM// Entry Information  -- response. 
-            console.log()
-            //TM// Parking Information -- response. 
-            console.log()
+            // console.log()
+            // //TM// Stadium Name -- response. 
+            // console.log()
+            // //TM// Game Date  -- response.  dates.start.localDate 
+            // console.log()
+            // //TM// Game Time  -- response.  dates.start.localTime 
+            // console.log()
+            // //TM// Ticket Pricing Range  -- response.
+            // console.log() 
+            // //TM// Entry Information  -- response. 
+            // console.log()
+            // //TM// Parking Information -- response. 
+            // console.log()
         
     
         },
@@ -45,7 +48,6 @@ $(document).ready(function () {
     });
 
 
- 
 
 
     // https://app.ticketmaster.com/discovery/v2/events?apikey=7elxdku9GGG5k8j0Xm8KWdANDgecHMV0&keyword=Vikings&locale=*&subGenreId=KZazBEonSMnZfZ7vFE1&sort=date,asc
