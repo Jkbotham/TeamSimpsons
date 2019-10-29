@@ -25,9 +25,14 @@ h2{
     font-family: 'Varela Round', sans-serif;
 }
 
-.navbar{
+/* .navbar{
     font-family: 'Varela Round', sans-serif;
-}
+    background-color: #DE412C;
+} */
+
+.navbar-default {
+    background-color:  #DE412C;
+    border-color: white;
 
 .navbar-light .navbar-nav .nav-link{
     float: right;
@@ -46,4 +51,8 @@ h2{
     text-align: right;
     padding: 10px;
     float: right:
+}
+
+a{
+    float: right;
 }
