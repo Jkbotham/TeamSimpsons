@@ -57,13 +57,10 @@ $(document).ready(function () {
         success: function (response) {
             console.log(response);
             console.log(response._embedded.events[0]);
-<<<<<<< HEAD
             //Team Logos 
         
             //Team Records
-=======
             
->>>>>>> 8f4a3bb751666e071dfb283032a21eee173dc4f2
 
             // Objects we are going to use in the site
             //TM// Ticket Adress -- response. 
@@ -96,10 +93,8 @@ $(document).ready(function () {
 
 
 });
-<<<<<<< HEAD
     var APIKey = "1";
     var queryURL = "https://www.thesportsdb.com/api/v1/json/" + APIKey + "/lookupteam.php?id=134941";
-=======
 
 // SPORTS DB AJAX CALL
 
@@ -107,7 +102,6 @@ $(document).ready(function() {
     var DBAPIKey = "1";
     var teamID = "134941"
     var queryURL = "https://www.thesportsdb.com/api/v1/json/" + DBAPIKey + "/lookupteam.php?id=" + teamID;
->>>>>>> 8f4a3bb751666e071dfb283032a21eee173dc4f2
    
     $.ajax({
       url: queryURL,
@@ -118,7 +112,17 @@ $(document).ready(function() {
         //PULL TEAM LOGO (LINK)//
         console.log(responseDB.teams[0].strTeamBadge);
 
-        //PULL TEAM 
+        //PULL TEAM TWITTER
+        console.log(responseDB.teams[0].strTwitter);
+
+        //PULL TEAM WEBSITE
+        console.log(responseDB.teams[0].strWebsite);
+
+        //PULL TEAM FACEBOOK
+        console.log(responseDB.teams[0].strFacebook);
+
+        //PULL TEAM INSTAGRAM
+        console.log(responseDB.teams[0].strInstagram);
     });
 });
 
