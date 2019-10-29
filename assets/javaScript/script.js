@@ -21,8 +21,7 @@ $(document).ready(function () {
         success: function (response) {
             console.log(response);
             console.log(response._embedded.events[0]);
-            //Team Logos 
-            //Team Records
+            
 
             // Objects we are going to use in the site
             //TM// Ticket Adress -- response. 
@@ -55,15 +54,24 @@ $(document).ready(function () {
 
 
 });
+
+// SPORTS DB AJAX CALL
+
 $(document).ready(function() {
     var DBAPIKey = "1";
-    var queryURL = "https://www.thesportsdb.com/api/v1/json/" + DBAPIKey + "/searchteams.php?t=Vikings";
+    var teamID = "134941"
+    var queryURL = "https://www.thesportsdb.com/api/v1/json/" + DBAPIKey + "/lookupteam.php?id=" + teamID;
    
     $.ajax({
       url: queryURL,
       method: "GET"
     }).then(function(responseDB) {
         console.log(responseDB);
+
+        //PULL TEAM LOGO (LINK)//
+        console.log(responseDB.teams[0].strTeamBadge);
+
+        //PULL TEAM 
     });
 });
 
