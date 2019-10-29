@@ -11,6 +11,42 @@ $(document).ready(function () {
     var keywordSearch = "&keyword=";
     var sortAsc = "&sort=date,asc"
 
+    //Search by id in DBSports API
+    var nflTeams = 
+    {cardinals:"134946", 
+    falcons: "134942", 
+    ravens: "134922",
+    bills: "134918",
+    panthers: "134943",
+    bears: "134938",
+    bengals: "134923",
+    browns: "134924",
+    cowboys: "134934",
+    broncos: "134930",
+    lions: "134939",
+    packers: "134940",
+    texans: "134926",
+    colts: "134927",
+    jaguars: "134928",
+    chiefs: "134931",
+    chargers: "135908",
+    rams: "135907",
+    dolphins: "134919",
+    vikings: "134941",
+    patriots: "134920",
+    saints: "134944",
+    giants: "134935",
+    jets: "134921",
+    raiders: "134932",
+    eagles: "134936",
+    steelers: "134925",
+    fortyNiners: "134948",
+    seahawks: "134949",
+    buccaneers: "134945",
+    titans: "134929",
+    redskins: "134937",
+};
+
     $.ajax({
         type: "GET",
         url: proxy + ticketMasterURL,
@@ -22,6 +58,7 @@ $(document).ready(function () {
             console.log(response);
             console.log(response._embedded.events[0]);
             //Team Logos 
+        
             //Team Records
 
             // Objects we are going to use in the site
@@ -56,7 +93,7 @@ $(document).ready(function () {
 
 });
     var APIKey = "1";
-    var queryURL = "https://www.thesportsdb.com/api/v1/json/" + APIKey + "/searchteams.php?t=Vikings";
+    var queryURL = "https://www.thesportsdb.com/api/v1/json/" + APIKey + "/lookupteam.php?id=134941";
    
     $.ajax({
       url: queryURL,
