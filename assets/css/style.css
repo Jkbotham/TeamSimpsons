@@ -25,26 +25,13 @@ h2{
     font-family: 'Varela Round', sans-serif;
 }
 
-/* .navbar{
-    font-family: 'Varela Round', sans-serif;
-    background-color: #DE412C;
-} */
 
-.navbar-default {
+nav{
     background-color:  #DE412C;
     border-color: white;
 
-.navbar-light .navbar-nav .nav-link{
-    float: right;
-    color: white;
-}
-
 .navbar-brand {
     color: antiquewhite;
-}
-
-#navbarDropdownMenuLink {
-    float: right;
 }
 
 .nflTeams {
@@ -53,6 +40,15 @@ h2{
     float: right:
 }
 
-a{
-    float: right;
+p{
+    text-align:center;
 }
+
+/* NAV BAR FORMATTING  */
+.navbar-custom{
+    background-color: #DD0700;
+}
+a{
+    color: #ffffff !important;
+}
+
