@@ -30,9 +30,6 @@ nav{
     background-color:  #DE412C;
     border-color: white;
 
-.navbar-brand {
-    color: antiquewhite;
-}
 
 .nflTeams {
     text-align: right;
@@ -44,11 +41,10 @@ p{
     text-align:center;
 }
 
-/* NAV BAR FORMATTING  */
-.navbar-custom{
-    background-color: #DD0700;
-}
-a{
-    color: #ffffff !important;
+header{ 
+    background-color:  #DE412C;
 }
 
+.container{ 
+    margin:0;
+}
