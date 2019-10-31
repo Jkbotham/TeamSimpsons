@@ -30,22 +30,6 @@ body{
     background-color: white, .66;
 }
 
-.footer{
-    background-color:#666666;
-    font-family: 'Cairo', sans-serif;
-    font-size: 12px;
-    color: black;
-    height: auto;
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    border-top: 8px solid darkred;
-    text-align: center;
-    margin: 0;
-    right: 0;
-    left:0;
-}
-
 .card-header{
     font-family: 'Varela Round', sans-serif; 
     font-size:25px;
@@ -62,6 +46,26 @@ h5{
     padding:15px;
 }
 
+.footer{
+    background-color:#666666;
+    font-family: 'Cairo', sans-serif;
+    font-size: 12px;
+    color: black;
+    height: auto;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 8px solid darkred;
+    text-align: center;
+    margin: 0;
+    right: 0;
+    left:0;
+}
+
+.container-fluid{
+    padding-right:0;
+    padding-left:0;
+}
 
 /*media queries*/
 
@@ -71,6 +75,11 @@ h5{
         border-bottom: 1px solid black;
         border-right:none;
     }
+
+    .container-fluid{
+        padding-right:0;
+        padding-left:0;
+    }
   }
    
   @media only screen and (max-width: 768px) {
@@ -79,6 +88,11 @@ h5{
         width: 100%;
         margin:auto 0;
       }
+
+      .container-fluid{
+        padding-right:0;
+        padding-left:0;
+    }
     }
   
     @media only screen and (max-width: 980px) {
@@ -87,5 +101,10 @@ h5{
         width: 100%;
         margin:auto 0;
       }
+
+      .container-fluid{
+        padding-right:0;
+        padding-left:0;
+    }
     }
   
