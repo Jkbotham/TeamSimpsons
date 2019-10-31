@@ -50,6 +50,7 @@ $(document).ready(function () {
 
 
 $(".teamBtn").on("click", function(){
+    event.preventDefault();
     console.log($(this).text());
     searchedTeamName = $(this).text()
 
@@ -74,7 +75,6 @@ function ticketMasterCall(){
         timeout: 2000,
         success: function (response) {
 
-            var stadiumImg = response._embedded.events[0]._embedded.venues[0].images[0];
             console.log(response);
             console.log(response._embedded.events[0]);
 
@@ -92,7 +92,7 @@ function ticketMasterCall(){
             console.log(response._embedded.events[0]._embedded.venues); //Can't get specific name.
             $("#stadium").text(response._embedded.events[0]._embedded.venues[0].name)
             $("#address").text(response._embedded.events[0]._embedded.venues[0].address.line1 + ", " + response._embedded.events[0]._embedded.venues[0].city.name + ", " + response._embedded.events[0]._embedded.venues[0].state.stateCode + " " + response._embedded.events[0]._embedded.venues[0].postalCode)
-            // $("#venue").attr("href", response._embedded.events[0]._embedded.venues[0].url)
+            $("#venue").attr("href", response._embedded.events[0]._embedded.venues[0].url)
 
             //TM// Game Date    
             console.log(response._embedded.events[0].dates.start.localDate);
@@ -138,15 +138,18 @@ function ticketMasterCall(){
 
         //PULL TEAM TWITTER
         console.log(responseDB.teams[0].strTwitter);
+        $(".fa-twitter-square").attr('href', "https://" + responseDB.teams[0].strTwitter)
 
         //PULL TEAM WEBSITE
         console.log(responseDB.teams[0].strWebsite);
 
         //PULL TEAM FACEBOOK
         console.log(responseDB.teams[0].strFacebook);
+        $(".fa-facebook-square").attr('href', "https://" + responseDB.teams[0].strFacebook)
 
         //PULL TEAM INSTAGRAM
         console.log(responseDB.teams[0].strInstagram);
+        $(".fa-instagram").attr('href', "https://" + responseDB.teams[0].strInstagram)
     });
 };
 
