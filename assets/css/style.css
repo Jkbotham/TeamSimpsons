@@ -53,8 +53,10 @@ body{
 h5{
     font-family: 'Varela Round', sans-serif; 
     font-size:15px;
+    padding: 10px;
 }
 
-#rightside{
+#leftside{
     border-right: 1px solid black;
+    padding:15px;
 }
