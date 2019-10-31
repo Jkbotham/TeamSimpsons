@@ -42,8 +42,12 @@ h5{
 }
 
 #leftside{
-    border-right: 1px solid black;
-    padding:15px;
+    padding:10px;
+}
+
+#rightside{
+    border-left: 2px solid black;
+    padding: 20px;
 }
 
 .footer{
@@ -71,9 +75,9 @@ h5{
 
 @media only screen and (max-width: 640px) {
     /* For small devices: */
-    #leftside{
-        border-bottom: 1px solid black;
-        border-right:none;
+    #rightside{
+        border-top: 2px solid black;
+        border-left:none;
     }
 
     .container-fluid{
