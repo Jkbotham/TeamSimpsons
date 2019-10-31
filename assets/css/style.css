@@ -62,13 +62,6 @@ h5{
     padding:15px;
 }
 
-.img-fluid{
-    max-width:600px;
-}
-
-.nav > li > a:hover {
-    color: black;
-}
 
 /*media queries*/
 
