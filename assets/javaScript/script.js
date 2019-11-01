@@ -81,13 +81,12 @@ function ticketMasterCall(){
             var parkingDetails = response._embedded.events[0]._embedded.venues[0].parkingDetail;
             console.log(parkingDetails);
             //Team Logos 
-        
-            //Team Records
-            
+            console.log(moment(response._embedded.events[0].dates.start.dateTime).format("LLL"));
+            //Team Searched
+            $(".card-header").text(searchedTeamName);
+
 
             // Objects we are going to use in the site
-            //TM// Ticket Adress -- response. 
-            // console.log()
             //TM// Stadium Name -- response. 
             console.log(response._embedded.events[0]._embedded.venues); //Can't get specific name.
             $("#stadium").text(response._embedded.events[0]._embedded.venues[0].name)
@@ -96,15 +95,21 @@ function ticketMasterCall(){
 
             //TM// Game Date    
             console.log(response._embedded.events[0].dates.start.localDate);
+            // $("#date").text(response._embedded.events[0].dates.start.localDate)
             //TM// Game Time  
             console.log(response._embedded.events[0].dates.start.localTime);
+            $("#date").text(moment(response._embedded.events[0].dates.start.dateTime).format("LLL"));
             //TM// Ticket Pricing Range  -- response.
-            console.log(response._embedded.events[0].priceRanges);
+            $("#max").text(response._embedded.events[0].priceRanges[0].max)
+            $("#min").text(response._embedded.events[0].priceRanges[0].min)
             //TM// Entry Information  -- response. 
             console.log(response._embedded.events[0]._embedded.venues[0].generalInfo.generalRule);
             //TM// Parking Information -- response. 
             console.log(response._embedded.events[0]._embedded.venues[0].parkingDetail);
 
+            // Team Logos
+            $("#logoImg1").attr("src", response._embedded.events[0]._embedded.attractions[0].images[0].url);
+            $("#logoImg2").attr("src", response._embedded.events[0]._embedded.attractions[1].images[0].url);
 
         },
         error: function (xhr, status, err) {
@@ -134,7 +139,8 @@ function ticketMasterCall(){
         // Stadium image 
         $("#stadiumImg").attr("src", responseDB.teams[0].strStadiumThumb);
         //PULL TEAM LOGO (LINK)//
-        console.log(responseDB.teams[0].strTeamBadge);
+        // console.log(responseDB.teams[0].strTeamBadge); Found in the other api
+        // $("#logoImg1").attr("src", responseDB.teams[0].strTeamBadge)
 
         //PULL TEAM TWITTER
         console.log(responseDB.teams[0].strTwitter);
