@@ -64,7 +64,9 @@ $(".teamBtn").on("click", function(){
     ticketMasterCall();
 })
 
-function ticketMasterCall(){
+function ticketMasterCall(teamInfo){
+
+    searchedTeamName=teamInfo.team;
 
     $.ajax({
         type: "GET",
@@ -80,6 +82,7 @@ function ticketMasterCall(){
 
             var parkingDetails = response._embedded.events[0]._embedded.venues[0].parkingDetail;
             console.log(parkingDetails);
+            $("#entryInfo").text(parkingDetails);
             //Team Logos 
             console.log(moment(response._embedded.events[0].dates.start.dateTime).format("LLL"));
             //Team Searched
@@ -124,11 +127,35 @@ function ticketMasterCall(){
 
 
 
+//On load function for 'Vikings' Default
+$(window).on('load', function(){
+          
+        
+    sportsDbTeamInfo = {
+        "team": "Vikings",
+        "id": "134941"
+    }
+
+    //searchedTeamName = sportsDbTeamInfo.team
+
+
+
+    // console.log($(this).attr("data-sportsDb"));
+    // sportsDbTeamId = $(this).attr("data-sportsDb");
+
+    sportsDbCall(sportsDbTeamInfo);
+    ticketMasterCall(sportsDbTeamInfo);
+});
+
 // SPORTS DB AJAX CALL
 
     var DBAPIKey = "1";
 
-    function sportsDbCall(){
+    function sportsDbCall(teamInfo){
+
+    sportsDbTeamId = teamInfo.id;
+
+    
     var queryURL = "https://www.thesportsdb.com/api/v1/json/" + DBAPIKey + "/lookupteam.php?id=" + sportsDbTeamId;
    
     $.ajax({
@@ -156,6 +183,8 @@ function ticketMasterCall(){
         //PULL TEAM INSTAGRAM
         console.log(responseDB.teams[0].strInstagram);
         $(".fa-instagram").attr('href', "https://" + responseDB.teams[0].strInstagram)
+
+
     });
 };
 
