@@ -53,15 +53,21 @@ $(".teamBtn").on("click", function(){
     event.preventDefault();
     console.log($(this).text());
     searchedTeamName = $(this).text()
-
+console.log("******" + searchedTeamName);
     console.log(teamSearch);
 
 
-    console.log($(this).attr("data-sportsDb"));
+    console.log("here next" + $(this).attr("data-sportsDb") );
     sportsDbTeamId = $(this).attr("data-sportsDb");
 
-    sportsDbCall();
-    ticketMasterCall();
+
+    sportsDbTeamInfo = {
+        "team": searchedTeamName,
+        "id": sportsDbTeamId
+    }
+
+    sportsDbCall(sportsDbTeamInfo);
+    ticketMasterCall(sportsDbTeamInfo);
 })
 
 function ticketMasterCall(teamInfo){

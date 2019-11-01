@@ -115,7 +115,8 @@ h5{
     #parkingInfo{
         width:100%;
         height:75px;
-        /* overflow:scroll; */
+        overflow:scroll;
+        word-wrap: break-word;
     }
     #entryInfo{
         width:100%;
