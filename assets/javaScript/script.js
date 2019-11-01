@@ -82,7 +82,7 @@ function ticketMasterCall(teamInfo){
 
             var parkingDetails = response._embedded.events[0]._embedded.venues[0].parkingDetail;
             console.log(parkingDetails);
-            $("#entryInfo").text(parkingDetails);
+            $("#parkingInfo").text(parkingDetails);
             //Team Logos 
             console.log(moment(response._embedded.events[0].dates.start.dateTime).format("LLL"));
             //Team Searched
@@ -107,6 +107,11 @@ function ticketMasterCall(teamInfo){
             $("#min").text(response._embedded.events[0].priceRanges[0].min)
             //TM// Entry Information  -- response. 
             console.log(response._embedded.events[0]._embedded.venues[0].generalInfo.generalRule);
+            
+            //This doesn't work yet
+            var entryDetails = response._embedded.events[0]._embedded.venues[0].generalInfo.generalRule;
+            $("#entryInfo").text(entryDetails);
+
             //TM// Parking Information -- response. 
             console.log(response._embedded.events[0]._embedded.venues[0].parkingDetail);
 
