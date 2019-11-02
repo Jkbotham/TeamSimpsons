@@ -30,7 +30,7 @@ Our website produces ticket information such as price range, parking info, stadi
 
 <!-- The code below utilizes ticketMaster's API to pull an NFL team, and it's ticket information including price range, enrty info, and date   -->
 
-$.ajax({
+`$.ajax({<br>
         type: "GET",
         url: proxy + ticketMasterURL,
         async: true,
@@ -39,20 +39,20 @@ $.ajax({
         timeout: 2000,
         success: function (response) {
             console.log(response);
-            console.log(response._embedded.events[0]);
+            console.log(response._embedded.events[0]);`
 
 
 <!-- Exact description of what the code below does -->
-$.ajax({
+`$.ajax({
       url: queryURL,
       method: "GET"
     }).then(function(responseDB) {
-        console.log(responseDB);
+        console.log(responseDB);`
 
 ## API Reference
  
  [The Sports DB API](https://www.thesportsdb.com/api/v1/json/) <br>
- [TicktMaster API](https://app.ticketmaster.com/discovery/v2/events.json?)
+ [TicketMaster API](https://app.ticketmaster.com/discovery/v2/events.json?)
 
 ## Credits
 
