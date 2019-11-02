@@ -119,6 +119,9 @@ function ticketMasterCall(teamInfo){
             //TM// Parking Information -- response. 
             console.log(response._embedded.events[0]._embedded.venues[0].parkingDetail);
 
+            // adding location to buy tickets
+            $("#buyTickets").attr("href", response._embedded.events[0]._embedded.venues[0].url)
+
             // Team Logos
             $("#logoImg1").attr("src", response._embedded.events[0]._embedded.attractions[0].images[0].url);
             $("#logoImg2").attr("src", response._embedded.events[0]._embedded.attractions[1].images[0].url);
