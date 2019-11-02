@@ -42,13 +42,12 @@ Our website produces ticket information such as price range, parking info, stadi
             console.log(response._embedded.events[0]);```
 
 
-<!-- Exact description of what the code below does -->
-```$.ajax({
+$.ajax({
       url: queryURL,
       method: "GET"
     }).then(function(responseDB) {
         console.log(responseDB);```
-
+```
 ## API Reference
  
  [The Sports DB API](https://www.thesportsdb.com/api/v1/json/) <br>
