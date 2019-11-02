@@ -145,7 +145,7 @@ $(window).on('load', function(){
           
         
     sportsDbTeamInfo = {
-        "team": "Vikings",
+        "team": "Minnesota Vikings",
         "id": "134941"
     }
 
