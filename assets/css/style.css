@@ -137,3 +137,8 @@ h6{
         overflow:scroll;
         word-wrap: break-word;
     }
+
+    #nextGame {
+        text-align: left;
+        text-decoration: underline;
+    }
