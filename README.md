@@ -14,13 +14,13 @@ The user will be able to utilize the NFL team tab to select any one of the 32 te
 ## Screenshots
 
 
-<img src="assets/images/homepage.JPG">
+<img src="assets/images/homepage.JPG" alt="homepage Image">
 
-<img src="assets/images/hamburgerdropdown.JPG">
+<img src="assets/images/hamburgerdropdown.JPG" alt="navigational bar image">
 
-<img src="assets/images/selectteam.JPG">
+<img src="assets/images/selectteam.JPG" alt="Team info card image">
 
-<img src="assets/images/stadiuminfo.JPG">
+<img src="assets/images/stadiuminfo.JPG" alt="information about selected team">
 
 
 
