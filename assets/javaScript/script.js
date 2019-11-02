@@ -126,6 +126,8 @@ function ticketMasterCall(teamInfo){
             $("#logoImg1").attr("src", response._embedded.events[0]._embedded.attractions[0].images[0].url);
             $("#logoImg2").attr("src", response._embedded.events[0]._embedded.attractions[1].images[0].url);
 
+            
+
             //TM// Ticket Pricing Range  -- response.
             $("#max").text(response._embedded.events[0].priceRanges[0].max)
             $("#min").text(response._embedded.events[0].priceRanges[0].min)
