@@ -108,9 +108,7 @@ function ticketMasterCall(teamInfo){
             //TM// Game Time  
             console.log(response._embedded.events[0].dates.start.localTime);
             $("#date").text(moment(response._embedded.events[0].dates.start.dateTime).format("LLL"));
-            //TM// Ticket Pricing Range  -- response.
-            $("#max").text(response._embedded.events[0].priceRanges[0].max)
-            $("#min").text(response._embedded.events[0].priceRanges[0].min)
+
             //TM// Entry Information  -- response. 
             console.log(response._embedded.events[0]._embedded.venues[0].generalInfo.generalRule);
             
@@ -124,6 +122,10 @@ function ticketMasterCall(teamInfo){
             // Team Logos
             $("#logoImg1").attr("src", response._embedded.events[0]._embedded.attractions[0].images[0].url);
             $("#logoImg2").attr("src", response._embedded.events[0]._embedded.attractions[1].images[0].url);
+
+            //TM// Ticket Pricing Range  -- response.
+            $("#max").text(response._embedded.events[0].priceRanges[0].max)
+            $("#min").text(response._embedded.events[0].priceRanges[0].min)
 
         },
         error: function (xhr, status, err) {
