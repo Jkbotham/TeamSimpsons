@@ -63,6 +63,10 @@ h6{
     padding: 20px;
 }
 
+.cardAlign{
+    margin: auto;
+}
+
 .footer{
     background-color:#666666;
     font-family: 'Cairo', sans-serif;
