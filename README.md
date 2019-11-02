@@ -13,7 +13,11 @@ The user will be able to utilize the NFL team tab to select any one of the 32 te
 
 ## Screenshots
 
-![Alt text](/TeamSimpsons/assets/images/homepage.jpg?raw=true "Optional Title")
+![Alt text](assets/images/homepage.jpg?raw=true "homepage")
+![Alt text](assets/images/hamburgerdropdown.jpg?raw=true "dropdown tab")
+![Alt text](assets/images/selectteam.jpg?raw=true "select team option")
+![Alt text](assets/images/stadiuminfo.jpg?raw=true "select team option")
+
 
 
 ## Tech/framework used
