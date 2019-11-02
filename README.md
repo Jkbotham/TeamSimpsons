@@ -42,7 +42,6 @@ Our website produces ticket information such as price range, parking info, stadi
             console.log(response._embedded.events[0]);```
 
 
-<!-- Exact description of what the code below does -->
 $.ajax({
       url: queryURL,
       method: "GET"
