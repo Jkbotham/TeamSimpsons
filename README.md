@@ -13,50 +13,28 @@ The user will be able to utilize the NFL team tab to select any one of the 32 te
 
 ## Screenshots
 
-<!-- Need to include some images of the website working -->
-Below is the website on a proper readme file and how to link screenshoots.
-<!-- https://ghost.org/blog/markdown/  -->
+![Alt text](/TeamSimpsons/assets/images/homepage.jpg?raw=true "Optional Title")
+
 
 ## Tech/framework used
 
-Built with HTML5, css, Google Fonts, Bootstrap, and font awesome.  <br>
-APIs used: [The Sports DB API](https://www.thesportsdb.com/api/v1/json/) and [TicketMaster API](https://app.ticketmaster.com/discovery/v2/events.json?)
+Built with HTML5, css, Google Fonts, Bootstrap, and font awesome.  APIs used, [link]("https://www.thesportsdb.com/api/v1/json/) and [link](https://app.ticketmaster.com/discovery/v2/events.json?)
 
 ## Features
-Our website produces ticket information such as price range, parking info, stadium entry guidelines.
-
-## Code Example
-<!-- include the API get commands, describe exactly what they do -->
-
-<!-- The code below utilizes ticketMaster's API to pull an NFL team, and it's ticket information including price range, enrty info, and date   -->
-
-```$.ajax({
-        type: "GET",
-        url: proxy + ticketMasterURL,
-        async: true,
-        dataType: "json",
-        data: "apikey=" + ticketMasterApiKey + footballID + sortAsc + keywordSearch + teamSearch,
-        timeout: 2000,
-        success: function (response) {
-            console.log(response);
-            console.log(response._embedded.events[0]);```
+Our website produces ticket information such as price range, parking info, and stadium entry guidelines.
 
 
-$.ajax({
-      url: queryURL,
-      method: "GET"
-    }).then(function(responseDB) {
-        console.log(responseDB);```
-```
+
 ## API Reference
- 
- [The Sports DB API](https://www.thesportsdb.com/api/v1/json/) <br>
- [TicketMaster API](https://app.ticketmaster.com/discovery/v2/events.json?)
+
+ [link]("https://www.thesportsdb.com/api/v1/json/)
+ [link](https://app.ticketmaster.com/discovery/v2/events.json?)
 
 ## Credits
 
-- James Bothham 
-- Henry Johnson
-- Keith Kleinschmidt
-- Brooke Kumar
-- Richard Tshabalala
+<!-- Include team members -->
+Brooke Kumar
+Henry Johnson
+James Bothham  
+Keith Kleinschmidt
+Richard Tshabalala
