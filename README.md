@@ -13,20 +13,23 @@ The user will be able to utilize the NFL team tab to select any one of the 32 te
 
 ## Screenshots
 
-![Alt text](https://github.com/brookekumar/TeamSimpsons/assets/images/homepage.jpg?raw=true "homepage")
-<img src="assets/images/homepage.JPG">
-![Alt text](https://github.com/brookekumar/TeamSimpsons/assets/images/hamburgerdropdown.jpg?raw=true "dropdown tab")
-<img src="assets/images/hamburgerdropdown.JPG">
-![Alt text](https://github.com/brookekumar/TeamSimpsons/assets/images/selectteam.jpg?raw=true "select team option")
-<img src="assets/images/selectteam.JPG">
-![Alt text](https://github.com/brookekumar/TeamSimpsons/assets/images/stadiuminfo.jpg?raw=true "stadium info")
-<img src="assets/images/stadiuminfo.JPG">
+![Alt text](https://github.com/brookekumar/TeamSimpsons/assets/images/homepage.JPG?raw=true "homepage")
+<!-- <img src="assets/images/homepage.JPG"> -->
+![Alt text](https://github.com/brookekumar/TeamSimpsons/assets/images/hamburgerdropdown.JPG?raw=true "dropdown tab")
+<!-- <img src="assets/images/hamburgerdropdown.JPG"> -->
+![Alt text](https://github.com/brookekumar/TeamSimpsons/assets/images/selectteam.JPG?raw=true "select team option")
+<!-- <img src="assets/images/selectteam.JPG"> -->
+![Alt text](https://github.com/brookekumar/TeamSimpsons/assets/images/stadiuminfo.JPG?raw=true "stadium info")
+<!-- <img src="assets/images/stadiuminfo.JPG"> -->
 
 
 
 ## Tech/framework used
 
-Built with HTML5, css, Google Fonts, Bootstrap, and font awesome.  APIs used, [link]("https://www.thesportsdb.com/api/v1/json/) and [link](https://app.ticketmaster.com/discovery/v2/events.json?)
+Built with HTML5, css, Google Fonts, Bootstrap, and font awesome. 
+ <br> APIs used:<br>
+--[The Sports DB API](https://www.thesportsdb.com/api/v1/json/) <br>
+--[TicketMaster API](https://app.ticketmaster.com/discovery/v2/events.json?)
 
 ## Features
 Our website produces ticket information such as price range, parking info, and stadium entry guidelines.
@@ -35,14 +38,15 @@ Our website produces ticket information such as price range, parking info, and s
 
 ## API Reference
 
- [link]("https://www.thesportsdb.com/api/v1/json/)
- [link](https://app.ticketmaster.com/discovery/v2/events.json?)
+ --[The Sports DB API](https://www.thesportsdb.com/api/v1/json/)
+ <br>
+ --[TicktMaster API](https://app.ticketmaster.com/discovery/v2/events.json?)
 
 ## Credits
 
 <!-- Include team members -->
-Brooke Kumar
-Henry Johnson
-James Bothham  
-Keith Kleinschmidt
-Richard Tshabalala
+--Brooke Kumar
+--Henry Johnson
+--James Bothham  
+--Keith Kleinschmidt
+--Richard Tshabalala
