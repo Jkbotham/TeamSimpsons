@@ -19,7 +19,7 @@ Below is the website on a proper readme file and how to link screenshoots.
 
 ## Tech/framework used
 
-Built with HTML5, css, Google Fonts, Bootstrap, and font awesome.  APIs used, [link]("https://www.thesportsdb.com/api/v1/json/) and [link](https://app.ticketmaster.com/discovery/v2/events.json?)
+Built with HTML5, css, Google Fonts, Bootstrap, and font awesome.  APIs used, [The Sports DB API](https://www.thesportsdb.com/api/v1/json/) and [TicketMaster API](https://app.ticketmaster.com/discovery/v2/events.json?)
 
 ## Features
 Our website produces ticket information such as price range, parking info, stadium entry guidelines.
@@ -49,13 +49,12 @@ $.ajax({
         console.log(responseDB);
 
 ## API Reference
-
- [link]("https://www.thesportsdb.com/api/v1/json/)
- [link](https://app.ticketmaster.com/discovery/v2/events.json?)
+ 
+ [The Sports DB API](https://www.thesportsdb.com/api/v1/json/)
+ [TicktMaster API](https://app.ticketmaster.com/discovery/v2/events.json?)
 
 ## Credits
 
-<!-- Include team members -->
 Richard Tshabalala
 Brooke Kumar
 James Bothham  
