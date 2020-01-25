@@ -13,6 +13,7 @@ The user will be able to utilize the NFL team tab to select any one of the 32 te
 
 ## Screenshots
 
+<a href="https://www.jamesbotham.com/assets/TeamSimpsons/index.html">Deployed Application</a>
 
 <img src="assets/images/homepage.JPG" alt="homepage Image">
 
